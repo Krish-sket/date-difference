@@ -6,7 +6,7 @@ app=Flask(__name__)
 @app.route("/",methods=['POST','GET'])
 def calculate():
     difference=None
-    if request.method == 'POST' and 'date1' in request.form and 'date2' in request.form:
+    if request.method == 'POST':
         date1 = int(request.form.get('date1',0))
         date2 = int(request.form.get('date2',0))
         month1 = int(request.form.get('month1',0))
