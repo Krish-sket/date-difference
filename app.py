@@ -16,5 +16,8 @@ def calculate():
         n1 = date(year1, month1, date1)
         n2 = date(year2, month2, date2)
         difference = (n2 - n1).days
-        return render_template('index.html',difference=difference)
+    return render_template('index.html',difference=difference)
+
+if __name__ == "__main__":
+    app.run(debug=True)
     
